@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	box-sizing: border-box;
+}
+
+/************Small (Global)****/
+
+body{
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+.containerGeheel {
+	display: flex;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+.containerTijdlijn {
+	width: 25%;
+	display: flex;
+	flex-flow: column;
+
+}
+
+.item {
+	width: 100%;
+
+}
+
+
+.tekstueleInformatie {
+	height: 365px;
+	padding-right: 20px;
+}
+
+.afbeelding {
+	padding-top:15%;
+	margin: 0 auto;
+}
+
+.imgHorizontaal {
+	width: 60%;
+    height: auto;
+    max-width: 85%;
+}
+
+.imgVerticaal {
+	height: 275px;
+	width: auto;
+}
+
+h3{
+	font-size: 1.25em;
+}
+
+p {
+	font-size: 0.75em;
+}
+
+.containerTijdlijn {
+	position: relative;
+	margin: 0 auto;
+}
+
+.containerTijdlijn::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	background-color: black;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+}
+
+.tijdlijn::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 8px;
+  background-color: black;
+  border: 2px solid;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  left: 25%;
+}
+
+span {
+	color: white;
+	position: relative;
+	z-index: 2;
+	top: 33px;
+}
+
+/**********End Global (small)***/
+
+/************Mid**************/
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+
+body {
+	font-size: 2em;
+}
+
+.tekstueleInformatie {
+	height: 549px;
+	padding-right: 40px;
+}
+
+.afbeelding {
+	height: 475px;
+	padding-top:15%;
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 0.85em;
+}
+
+.tijdlijn::after {
+  width: 85px;
+  height: 85px;
+  top: 50px;
+}
+
+span {
+	top: 75px;
+}
+
+img {
+
+	width: 35%;
+}
+
+.item {
+	height: 100%;
+	width: 100%;
+}
+
+}
+
+/**********End Mid************/
+
+/***********Large*************/
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+body {
+	font-size: 1.2em;
+}
+
+h3{
+	font-size: 2em;
+}
+
+ p {
+	font-size: 1em;
+}
+
+.tijdlijn::after {
+  left: 40%;
+}
+
+.container {
+	display: flex;
+	flex-flow: row;
+}
+
+.tekstueleInformatie {
+	padding-right: 50px;
+}
+
+.afbeelding {
+	padding-top: 5%;
+}
+
+}
+
+/*********End Large***********/
+
+/************XL**************/
+
+@media only screen and (min-width: 1440px) {
+
+body {
+	font-size: 1.2em;
+}
+
+.containerGeheel {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1em;
+}
+
+.tijdlijn::after {
+	left: 40%;
+}
+
+.container {
+	display: flex;
+	flex-flow: row;
+}
+
+.afbeelding {
+	padding-top: 2.5%;
+}
+
+.tekstueleInformatie {
+	padding-right: 100px;
+}
+
+}
+
+/**********End XL************/
+
